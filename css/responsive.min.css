@@ -1,0 +1,170 @@
+/* media queries for a responsive layout */
+@media(max-width: 1350px){
+    .home .max-width{
+        margin-left: 0;
+    }
+}
+@media(max-width:1180px){
+    .about .about-container .col-left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media(max-width : 1111px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1111px){
+    .navbar .icon{
+        display: block;
+    }
+    .navbar .icon.hide{
+        display: none;
+    }
+    .navbar .menu{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background:#111;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3px 0;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0%;
+    }
+    .navbar .menu li{
+        margin-top: 45px;
+    }
+
+    .navbar li a{
+        font-size: 20px;
+    }
+
+    .navbar li a:hover{
+        color: rgb(201, 25, 61);
+    }
+    
+
+    .home .max-width .text-2{
+        font-size: 68px;
+    }
+    .home .max-width .text-3{
+        font-size: 33px;
+    }
+    .home .max-width .home-btn a{
+        font-size: 22px;
+        padding: 6px 12px;
+    }
+
+    .max-width{
+        max-width: 860px;
+    }
+    .about .about-container{
+       width: 100%; 
+       display: block;
+       /* position: relative; */
+    }
+
+    .about .about-container .col-left{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-container .col-right{
+        width: 100%;
+    }
+    .about .about-container .col-right .about-me-txt{
+        text-align: center;
+    }
+
+    .skills .skills-container {
+        display: block;
+    }
+    
+    .skills .skills-container .column{
+        width: 100%;
+        margin-bottom: 38px;
+    }
+    
+   
+    .project .project-container .card{
+        width: 100%;
+    }
+    .project .project-container .card img{
+        width: 100%;
+    }
+    .contact .contact-container{
+        display: block;
+        
+        
+    }
+    .contact .contact-container .column{
+        width: 100%;
+        margin-bottom: 38px;
+    }
+    
+}
+
+@media (max-width: 777px){
+    .education .education-item:nth-child(even){
+        padding-right: 0;
+        text-align: left;
+    }
+    .education .education-item:nth-child(even) h3{
+        text-align: left;
+    }
+    .education .education-item:nth-child(even),
+    .education .education-item:nth-child(odd){
+        padding-left: 35px;
+        
+    }
+    .education .eduation-container::before{
+        left: 7px;
+    }
+    .education .eduation-container .education-dot{
+        left: 0;
+    }
+
+    /* .project .project-container .box img{
+        width: 330px;
+        height: 205px;
+    } */
+}
+
+@media (max-width: 708px){
+    .max-width{
+        padding: 0 25px;
+    }
+
+    .home .max-width .text-2{
+        font-size: 58px;
+    }
+
+    .home .max-width .text-3{
+        font-size: 29px;
+    }
+
+    .home .max-width .home-btn a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:510px){
+    .home .max-width .text-2{
+        font-size: 50px;
+
+    }
+    .home .max-width .text-3{
+        font-size: 27px;
+    }
+}
